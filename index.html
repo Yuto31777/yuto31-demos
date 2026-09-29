@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>嶋田 悠人｜Webサイト・業務アプリ制作</title>
+<meta name="description" content="福井県坂井市周辺の小さなお店・会社向けに、スマホで見やすいお店のページや予約・問い合わせの仕組みを低価格で制作します。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232F5D50'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='38' fill='white'%3E嶋%3C/text%3E%3C/svg%3E">
+<style>
+:root{--ink:#1f2723;--sub:#5f6b66;--bg:#f7f8f7;--card:#fff;--line:#dde3e0;--accent:#2F5D50;--accent-dark:#234a3f;--soft:#e8f0ed;--gold:#c9a063}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.8;-webkit-text-size-adjust:100%}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+section{padding:48px 0}
+h2{font-size:22px;margin:0 0 6px;letter-spacing:.04em}
+.en{display:block;font-size:12px;letter-spacing:.3em;color:var(--accent);font-weight:700}
+.lead{color:var(--sub);margin:0 0 22px;font-size:15px}
+
+.hero{background:var(--accent);color:#fff;padding:56px 0 48px}
+.hero .role{margin:0;font-size:14px;opacity:.85}
+.hero h1{margin:4px 0 18px;font-size:clamp(30px,8vw,42px);line-height:1.35;letter-spacing:.02em}
+.hero p{margin:0 0 26px;font-size:15px;opacity:.95}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:50px;padding:0 22px;border-radius:10px;font-weight:700;text-decoration:none;font-size:15px}
+.btn-white{background:#fff;color:var(--accent)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn-main{background:var(--accent);color:#fff}
+.btn-line{background:#06C755;color:#fff}
+
+.cards{display:grid;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin:0 0 4px;font-size:17px}
+.card p{margin:0;color:var(--sub);font-size:14px}
+.card .icon{font-size:26px}
+
+.why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why ol{margin:0;padding:0;list-style:none;display:grid;gap:14px;counter-reset:n}
+.why li{position:relative;padding-left:48px;counter-increment:n}
+.why li::before{content:counter(n);position:absolute;left:0;top:2px;width:34px;height:34px;border-radius:50%;background:var(--soft);color:var(--accent);font-weight:900;display:grid;place-items:center}
+.why b{display:block}
+.why span{color:var(--sub);font-size:14px}
+
+.price{display:grid;gap:12px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.plan.featured{border:2px solid var(--accent)}
+.plan .tag{display:inline-block;background:var(--accent);color:#fff;font-size:12px;border-radius:4px;padding:1px 8px;font-weight:700}
+.plan h3{margin:8px 0 2px;font-size:17px}
+.plan .yen{font-size:28px;font-weight:900;color:var(--accent)}
+.plan .yen small{font-size:13px;color:var(--sub);font-weight:400}
+.plan ul{margin:8px 0 0;padding-left:1.2em;font-size:14px}
+.note{font-size:12.5px;color:var(--sub);margin-top:12px}
+
+.works{display:grid;gap:14px}
+.work{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-decoration:none}
+.work .thumb{height:96px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:900;font-size:22px;letter-spacing:.1em}
+.work h3{margin:0;font-size:16px}
+.work p{margin:2px 0 0;font-size:13px;color:var(--sub)}
+.work .go{font-size:13px;color:var(--accent);font-weight:700}
+
+.flow{display:grid;gap:10px;counter-reset:s;margin:0;padding:0;list-style:none}
+.flow li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 14px 14px 64px;position:relative;counter-increment:s}
+.flow li::before{content:"STEP" counter(s);position:absolute;left:14px;top:16px;font-size:10px;font-weight:900;color:var(--accent);letter-spacing:.05em}
+.flow b{display:block}
+.flow span{font-size:13.5px;color:var(--sub)}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:8px 0 0;color:var(--sub);font-size:14px}
+
+.cta{background:var(--accent);color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta .en{color:var(--gold)}
+.cta p{opacity:.9}
+.cta .btns{justify-content:center}
+.cta .tel{display:block;margin-top:18px;font-size:22px;font-weight:900;text-decoration:none}
+footer{text-align:center;font-size:12px;color:var(--sub);padding:24px 16px 32px}
+
+@media (min-width:720px){
+  .cards{grid-template-columns:1fr 1fr}
+  .price{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="role">Webサイト・業務アプリ制作　嶋田 悠人</p>
+    <h1>小さなお店・会社の<br>「面倒」を、ひとつずつ減らします。</h1>
+    <p>スマホで見やすいお店のページ、予約・お問い合わせの受付、顧客管理の小さな仕組みを、AIを活用して低価格・短期間でお作りします。福井県坂井市周辺なら、直接お伺いしてご相談をお受けします。</p>
+    <div class="btns">
+      <a class="btn btn-white" href="contact/">無料で相談する</a>
+      <a class="btn btn-outline" href="#works">制作例を見る</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <span class="en">SERVICE</span>
+    <h2>できること</h2>
+    <p class="lead">「全部おまかせの大きなシステム」ではなく、今いちばん困っていることを1つ解決するところから始めます。</p>
+    <div class="cards">
+      <div class="card"><div class="icon">📱</div><h3>お店のスマホページ</h3><p>営業時間・メニュー・地図・電話ボタンを1ページに。検索しても情報が出てこない、を解消します。</p></div>
+      <div class="card"><div class="icon">📅</div><h3>予約・お持ち帰り注文の受付</h3><p>24時間いつでも受付。内容はお店のスマホに届くので、営業中に電話に出られなくても取りこぼしません。</p></div>
+      <div class="card"><div class="icon">✉️</div><h3>問い合わせの整理・返信のお手伝い</h3><p>届いた問い合わせを一覧にまとめ、返信文の下書きをAIが作成。対応漏れを防ぎます。</p></div>
+      <div class="card"><div class="icon">📋</div><h3>顧客管理・追客の小さな仕組み</h3><p>Excelや紙で管理している顧客情報を整理し、次に連絡する日を忘れない仕組みを作ります。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <span class="en">REASON</span>
+    <h2>選ばれる理由</h2>
+    <p class="lead">ご依頼いただく前に、完成イメージを実際に触って確かめていただけます。</p>
+    <ol>
+      <li><b>先に試作品をお見せします</b><span>お店に合わせた試作ページを先に作り、スマホで見ていただいてからご検討いただけます。</span></li>
+      <li><b>AI活用で低価格・短期間</b><span>制作の手間をAIで大幅に減らし、その分をお値段に反映しています。</span></li>
+      <li><b>作ったあとも、気軽に頼める</b><span>メニューや価格の変更など、小さな修正は月額の保守でいつでも対応します。</span></li>
+      <li><b>近くにいる担当者</b><span>福井県坂井市周辺なら、直接お伺いしてお話をお聞きします。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <span class="en">PRICE</span>
+    <h2>料金の目安</h2>
+    <p class="lead">内容をお聞きしたうえで、事前にお見積りをお出しします。ご了承いただくまで費用はかかりません。</p>
+    <div class="price">
+      <div class="plan featured">
+        <span class="tag">いちばん人気</span>
+        <h3>お店のスマホページ</h3>
+        <div class="yen">30,000円〜 <small>税込</small></div>
+        <ul><li>1ページのお店サイト</li><li>メニュー・営業時間・地図・電話ボタン</li><li>予約・お持ち帰りフォーム</li></ul>
+      </div>
+      <div class="plan">
+        <h3>業務アプリ・小さな仕組み</h3>
+        <div class="yen">50,000円〜 <small>税込</small></div>
+        <ul><li>問い合わせ管理・返信文の下書き</li><li>顧客管理・次回連絡日のお知らせ</li><li>Excel作業の自動化</li></ul>
+      </div>
+      <div class="plan">
+        <h3>月額の保守・改善</h3>
+        <div class="yen">3,000円〜 <small>税込／月</small></div>
+        <ul><li>文章・価格・写真の修正</li><li>表示の確認・不具合の対応</li><li>改善のご相談</li></ul>
+      </div>
+    </div>
+    <p class="note">※料金は目安です。独自のURL（ドメイン）の取得など、外部サービスの実費は別途となります。大きな機能追加は、事前にお見積りをお出しします。</p>
+  </div>
+</section>
+
+<section id="works" style="padding-top:0">
+  <div class="wrap">
+    <span class="en">WORKS</span>
+    <h2>制作例</h2>
+    <p class="lead">タップすると、実際に動く見本をご覧いただけます。</p>
+    <div class="works">
+      <a class="work" href="yohaku-coffee/">
+        <div class="thumb" style="background:linear-gradient(135deg,#274339,#6f8f7d)">余白</div>
+        <div><h3>喫茶店のサイト＋席予約・営業分析</h3><p>架空の喫茶店「余白珈琲」を題材にした見本です。席の予約と、予約データの集計画面を体験できます。</p><span class="go">見本を開く →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="en">FLOW</span>
+    <h2>ご依頼の流れ</h2>
+    <ol class="flow">
+      <li><b>ご相談（無料）</b><span>お困りごとをお聞きします。お電話・LINE・メール、または直接お伺いします。</span></li>
+      <li><b>試作・お見積り</b><span>試作品とお見積りをお出しします。ご納得いただくまで費用はかかりません。</span></li>
+      <li><b>制作・公開</b><span>内容を確認しながら仕上げます。1ページのサイトなら、目安は1〜2週間です。</span></li>
+      <li><b>公開後の保守・改善</b><span>月額の保守で、修正やご要望にいつでも対応します。</span></li>
+    </ol>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="en">FAQ</span>
+    <h2>よくあるご質問</h2>
+    <details><summary>パソコンが苦手でも大丈夫ですか？</summary><p>大丈夫です。更新は電話やLINEでご依頼いただければ、こちらで行います。</p></details>
+    <details><summary>月額の保守は必ず必要ですか？</summary><p>必須ではありません。ただ、メニューや営業時間の変更、不具合への対応を安心してお任せいただけるため、おすすめしています。</p></details>
+    <details><summary>どの地域まで来てもらえますか？</summary><p>福井県坂井市・福井市周辺はお伺いできます。それ以外の地域は、オンラインでのご相談をお受けします。</p></details>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <span class="en">CONTACT</span>
+    <h2>まずはお気軽にご相談ください</h2>
+    <p>「こんなことはできる？」という段階でも大丈夫です。</p>
+    <div class="btns">
+      <a class="btn btn-white" href="contact/">相談・お問い合わせ窓口へ</a>
+      <a class="btn btn-line" id="lineBtn" href="#" hidden>LINEで相談する</a>
+    </div>
+    <a class="tel" href="tel:07022500331">📞 070-2250-0331</a>
+  </div>
+</section>
+
+<footer>嶋田 悠人｜Webサイト・業務アプリ制作</footer>
+
+<script src="contact/config.js"></script>
+<script>
+if (window.CONTACT && CONTACT.lineUrl) {
+  const b = document.getElementById("lineBtn");
+  b.href = CONTACT.lineUrl; b.hidden = false;
+}
+</script>
+</body>
+</html>

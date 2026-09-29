@@ -27,6 +27,8 @@ h2{font-size:17px;margin:28px 0 10px}
 .quick .primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .quick .primary small{color:#dfeae6}
 .quick .wide{grid-column:1/-1;flex-direction:row;min-height:56px;gap:8px}
+.quick .line{background:#06C755;color:#fff;border-color:#06C755}
+.about-link{display:block;margin-top:14px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-weight:700;color:var(--accent);text-decoration:none}
 form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:14px}
 label{display:grid;gap:4px;font-size:13px;font-weight:700}
 input,select,textarea{font:inherit;font-size:16px;border:1px solid #cfd8d4;border-radius:8px;padding:10px 12px;background:#fff;color:var(--ink);width:100%}
@@ -61,6 +63,7 @@ footer{text-align:center;font-size:12px;color:var(--sub);padding:0 0 32px}
     <a id="smsLink" href="#"><span class="i">💬</span>SMSを送る<small>ショートメール</small></a>
     <a id="mailLink" href="#"><span class="i">✉️</span>メールを送る<small>アプリが開きます</small></a>
     <a href="yuto-shimada.vcf" download="嶋田悠人.vcf"><span class="i">👤</span>連絡先を保存<small>電話帳に登録</small></a>
+    <a class="wide line" id="lineLink" href="#" hidden><span class="i">🟢</span>LINEで相談する</a>
   </div>
 
   <h2>ご要望・ご相談を送る</h2>
@@ -99,11 +102,17 @@ footer{text-align:center;font-size:12px;color:var(--sub);padding:0 0 32px}
     </ul>
     <div class="copy" id="mailText"></div>
   </div>
+  <a class="about-link" href="../">嶋田について・できること・料金の目安 →</a>
 </main>
 
 <footer>嶋田 悠人｜Webサイト・業務アプリ制作</footer>
 
+<script src="config.js"></script>
 <script>
+if (window.CONTACT && CONTACT.lineUrl) {
+  const l = document.getElementById("lineLink");
+  l.href = CONTACT.lineUrl; l.hidden = false;
+}
 // メールアドレスは自動収集を避けるため分割して組み立てる
 const TEL = "07022500331";
 const MAIL = ["yutoshimada0301", "gmail.com"].join("@");

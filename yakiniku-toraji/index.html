@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>焼肉とらじ｜坂井市丸岡町（試作ページ）</title>
+<meta name="description" content="坂井市丸岡町羽崎の焼肉とらじ。座敷でゆっくり焼肉と自慢の冷麺を。※営業提案用の非公式試作ページです。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23a3271c'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='38' fill='white'%3Eと%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#231a15;--sub:#6b5d54;--paper:#fbf6ef;--card:#fff;--line:#e8ddd0;
+  --red:#a3271c;--red-dark:#7d1c13;--wood:#6e3b1f;--ember:#e9772b;--gold:#c9a063;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans JP",system-ui,sans-serif;line-height:1.75;-webkit-text-size-adjust:100%;padding-bottom:76px}
+a{color:inherit}
+.serif{font-family:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif}
+.demo-bar{background:#2b2b2b;color:#f3f3f3;font-size:12px;padding:8px 16px;text-align:center;line-height:1.5}
+.demo-bar b{color:#ffd28a}
+
+/* ヒーロー */
+.hero{position:relative;overflow:hidden;color:#fff;background:
+  radial-gradient(120% 70% at 50% 110%,rgba(233,119,43,.55),transparent 60%),
+  radial-gradient(80% 50% at 20% 100%,rgba(163,39,28,.7),transparent 70%),
+  linear-gradient(180deg,#1b1210 0%,#2a1712 60%,#3a1c12 100%);
+  padding:56px 20px 64px;text-align:center}
+.hero .grill{position:absolute;left:50%;bottom:-40px;width:520px;max-width:140%;transform:translateX(-50%);opacity:.22}
+.hero-inner{position:relative;max-width:640px;margin:0 auto}
+.hero .kicker{display:inline-block;border:1px solid rgba(255,255,255,.5);border-radius:999px;padding:2px 14px;font-size:13px;letter-spacing:.1em}
+.hero h1{margin:18px 0 6px;font-size:clamp(46px,14vw,76px);line-height:1.1;letter-spacing:.08em;font-weight:900}
+.hero h1 small{display:block;font-size:.32em;letter-spacing:.3em;font-weight:600;margin-bottom:6px;color:var(--gold)}
+.hero p{margin:14px 0 26px;font-size:15px;opacity:.92}
+.hero .info{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;font-size:13px}
+.hero .info span{background:rgba(255,255,255,.1);border-radius:6px;padding:4px 10px}
+
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:0 22px;border-radius:10px;font-weight:700;text-decoration:none;border:0;font-size:15px;cursor:pointer;font-family:inherit}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.btn-line{background:#fff;color:var(--red);border:1.5px solid var(--red)}
+
+section{padding:52px 20px}
+.wrap{max-width:720px;margin:0 auto}
+.sec-title{text-align:center;margin:0 0 28px}
+.sec-title .en{display:block;font-size:12px;letter-spacing:.3em;color:var(--red);font-weight:700}
+.sec-title h2{margin:4px 0 0;font-size:26px;letter-spacing:.08em}
+
+/* 特長 */
+.features{display:grid;gap:14px}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 70px;position:relative}
+.feature .num{position:absolute;left:18px;top:16px;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:900}
+.feature h3{margin:0 0 4px;font-size:17px}
+.feature p{margin:0;color:var(--sub);font-size:14px}
+
+/* 名物 冷麺 */
+.signature{background:linear-gradient(180deg,#fff 0%,#f6efe4 100%)}
+.signature .box{background:var(--card);border-radius:18px;border:1px solid var(--line);overflow:hidden;display:grid}
+.signature .visual{background:radial-gradient(circle at 50% 55%,#f3ead9 0 38%,#fff 39% 47%,#e7dccb 48% 49%,transparent 50%),#efe4d3;min-height:210px;display:grid;place-items:center}
+.signature .visual svg{width:190px;height:190px}
+.signature .body{padding:22px}
+.badge{display:inline-block;background:var(--red);color:#fff;font-size:12px;font-weight:700;border-radius:4px;padding:2px 8px;letter-spacing:.1em}
+.signature h3{margin:8px 0 6px;font-size:24px}
+.signature .price{font-size:22px;font-weight:700;color:var(--red)}
+.signature .price small{font-size:12px;color:var(--sub);font-weight:400}
+
+/* メニュー */
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:0 0 16px;padding-bottom:4px;-webkit-overflow-scrolling:touch}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.menu-list{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--line);border-radius:14px}
+.menu-list li{display:flex;align-items:baseline;gap:8px;padding:13px 16px;border-top:1px dashed var(--line)}
+.menu-list li:first-child{border-top:0}
+.menu-list .name{font-weight:700}
+.menu-list .name small{font-weight:400;color:var(--sub);font-size:12px;margin-left:4px}
+.menu-list .dots{flex:1;border-bottom:1px dotted #c9bbab;transform:translateY(-4px)}
+.menu-list .yen{font-weight:700;white-space:nowrap}
+.menu-list .yen.tbd{color:var(--sub);font-weight:400;font-size:13px}
+.note{font-size:12.5px;color:var(--sub);margin:12px 4px 0}
+.takeout{margin-top:18px;background:#fff4e5;border:1px solid #f2d3a8;border-radius:12px;padding:14px 16px;font-size:14px}
+.takeout b{color:var(--wood)}
+
+/* 店内 */
+.seats{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+.seat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.seat .icon{font-size:30px}
+.seat h3{margin:4px 0 2px;font-size:16px}
+.seat p{margin:0;font-size:13px;color:var(--sub)}
+
+/* 予約 */
+.reserve{background:#231a15;color:#fff}
+.reserve .sec-title .en{color:var(--gold)}
+.reserve .lead{text-align:center;font-size:14px;opacity:.85;margin:-12px 0 22px}
+form{background:#fff;color:var(--ink);border-radius:16px;padding:20px;display:grid;gap:14px}
+label{display:grid;gap:4px;font-size:13px;font-weight:700}
+input,select,textarea{font:inherit;font-size:16px;border:1px solid #d7cabb;border-radius:8px;padding:10px 12px;background:#fff;color:var(--ink);width:100%}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kind{display:flex;gap:8px}
+.kind label{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #d7cabb;border-radius:8px;padding:10px;font-weight:700;cursor:pointer}
+.kind input{width:auto}
+.kind label:has(input:checked){border-color:var(--red);background:#fff1ef;color:var(--red)}
+.form-note{font-size:12px;color:var(--sub);margin:0}
+.done{display:none;background:#fff;color:var(--ink);border-radius:16px;padding:24px;text-align:center}
+.done h3{margin:0 0 8px;color:var(--red)}
+.done .summary{text-align:left;background:var(--paper);border-radius:10px;padding:12px 14px;font-size:14px;margin:14px 0}
+.or-tel{text-align:center;margin-top:18px;font-size:14px}
+.or-tel a{color:#ffd28a;font-weight:700;font-size:20px;text-decoration:none}
+
+/* 店舗情報 */
+dl.shop{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+dl.shop div{display:grid;grid-template-columns:92px 1fr;border-top:1px solid var(--line)}
+dl.shop div:first-child{border-top:0}
+dl.shop dt{background:#f6efe6;padding:12px;font-weight:700;font-size:14px}
+dl.shop dd{margin:0;padding:12px;font-size:14px}
+.tbd-tag{display:inline-block;font-size:11px;background:#eee;color:#555;border-radius:4px;padding:0 6px;margin-left:4px;font-weight:400}
+.map-btns{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.map-btns .btn{flex:1}
+
+footer{background:#1b1210;color:#cbbfb5;text-align:center;font-size:12px;padding:28px 20px 36px}
+footer .logo{font-size:22px;color:#fff;letter-spacing:.2em;margin-bottom:6px}
+
+/* 下部固定ボタン */
+.dock{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-top:1px solid var(--line);z-index:10;padding-bottom:env(safe-area-inset-bottom)}
+.dock a{display:grid;place-items:center;padding:8px 0 10px;text-decoration:none;font-size:12px;font-weight:700;color:var(--ink)}
+.dock a .i{font-size:20px;line-height:1.2}
+.dock a.main{background:var(--red);color:#fff}
+
+@media (min-width:720px){
+  .features{grid-template-columns:1fr 1fr 1fr}
+  .feature{padding:60px 18px 18px}
+  .signature .box{grid-template-columns:1fr 1fr}
+  .seats{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-bar"><b>非公式の試作ページです。</b>営業提案用に作成したデモで、お店の公式サイトではありません。掲載内容には確認中の情報を含みます。</div>
+
+<header class="hero">
+  <svg class="grill" viewBox="0 0 520 200" aria-hidden="true">
+    <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+      <rect x="40" y="40" width="440" height="150" rx="16"/>
+      <path d="M80 70v100M120 70v100M160 70v100M200 70v100M240 70v100M280 70v100M320 70v100M360 70v100M400 70v100M440 70v100"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <span class="kicker">坂井市丸岡町 羽崎</span>
+    <h1 class="serif"><small>焼肉</small>とらじ</h1>
+    <p>座敷でゆっくり、家族や仲間と囲む焼肉。<br>〆には自慢の冷麺を。</p>
+    <div class="info"><span>17:00〜21:00</span><span>月曜定休</span><span>座敷席あり</span></div>
+    <div class="btns">
+      <a class="btn btn-red" href="#reserve">席・お持ち帰りを予約</a>
+      <a class="btn btn-ghost" href="#menu">メニューを見る</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-title"><span class="en">FEATURES</span><h2 class="serif">とらじのこだわり</h2></div>
+    <div class="features">
+      <div class="feature"><span class="num">壱</span><h3>くつろげる座敷席</h3><p>小さなお子さま連れのご家族も、足を伸ばしてゆっくりお食事いただけます。</p></div>
+      <div class="feature"><span class="num">弐</span><h3>〆の冷麺が名物</h3><p>錦糸卵と海苔をのせた、さっぱり食べられる冷麺。焼肉のあとにぴったりです。</p></div>
+      <div class="feature"><span class="num">参</span><h3>お持ち帰りもOK</h3><p>焼肉用のお肉やキムチはお持ち帰りいただけます。ご自宅での焼肉にもどうぞ。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="signature">
+  <div class="wrap">
+    <div class="box">
+      <div class="visual" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="78" fill="#efe6d6"/>
+          <g stroke="#d8cfc0" stroke-width="3" fill="none" opacity=".9">
+            <path d="M40 110c30-20 90-20 120 0M45 95c30-18 80-18 110 0M50 125c25-15 75-15 100 0"/>
+          </g>
+          <g stroke="#f0c64a" stroke-width="6" stroke-linecap="round">
+            <path d="M70 80l30 14M85 72l24 18M95 85l30-6M78 95l36-4M105 70l14 24"/>
+          </g>
+          <g stroke="#1f2a22" stroke-width="5" stroke-linecap="round">
+            <path d="M80 88l22-20M98 96l26-12M88 70l10 26M110 78l-6 22"/>
+          </g>
+          <circle cx="135" cy="112" r="11" fill="#fff" stroke="#e7d9c3" stroke-width="3"/>
+          <circle cx="135" cy="112" r="5" fill="#f2b632"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="badge">名物</span>
+        <h3 class="serif">とらじの冷麺</h3>
+        <p>つるっとしたコシのある麺に、錦糸卵と刻み海苔。焼肉のあとでもするりと食べられる、とらじ自慢の一杯です。</p>
+        <div class="price">700円 <small>（税込・メニュー表より）</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="sec-title"><span class="en">MENU</span><h2 class="serif">お品書き</h2></div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="yakiniku">焼肉</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="men">麺・ご飯</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="kimchi">キムチ・野菜</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="soup">スープ</button>
+    </div>
+    <ul class="menu-list" id="menuList"></ul>
+    <p class="note">価格はすべて税込です。※試作のため、メニュー表の写真から読み取った内容です。正確な品目・価格はお店にご確認ください。</p>
+    <div class="takeout"><b>お持ち帰りできます：</b>焼肉・キムチなど。お電話またはこのページから事前にご注文いただくと、待たずにお受け取りいただけます。</div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-title"><span class="en">SEATS</span><h2 class="serif">店内</h2></div>
+    <div class="seats">
+      <div class="seat"><div class="icon">🏮</div><h3>座敷席</h3><p>店内は座敷が中心です</p></div>
+      <div class="seat"><div class="icon">🔥</div><h3>各席に焼き台</h3><p>自分好みの焼き加減で</p></div>
+      <div class="seat"><div class="icon">👨‍👩‍👧</div><h3>ご家族で</h3><p>お子さま連れも歓迎</p></div>
+      <div class="seat"><div class="icon">🥡</div><h3>お持ち帰り</h3><p>焼肉・キムチなど</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="wrap">
+    <div class="sec-title"><span class="en">RESERVATION</span><h2 class="serif">ご予約・お持ち帰り注文</h2></div>
+    <p class="lead">24時間いつでも受付。営業時間外のご連絡も、お店が確認してお返事します。</p>
+    <form id="reserveForm" novalidate>
+      <div class="kind" role="radiogroup" aria-label="ご用件">
+        <label><input type="radio" name="kind" value="席の予約" checked> 席の予約</label>
+        <label><input type="radio" name="kind" value="お持ち帰り"> お持ち帰り</label>
+      </div>
+      <div class="row2">
+        <label>日付<input type="date" name="date" required></label>
+        <label>時間<select name="time" required></select></label>
+      </div>
+      <label id="peopleField">人数<select name="people"></select></label>
+      <label id="orderField" hidden>ご注文内容<textarea name="order" rows="3" placeholder="例：カルビ2人前、キムチ(白菜)1つ"></textarea></label>
+      <div class="row2">
+        <label>お名前<input type="text" name="name" autocomplete="name" placeholder="坂井 太郎" required></label>
+        <label>電話番号<input type="tel" name="tel" autocomplete="tel" placeholder="090-0000-0000" required></label>
+      </div>
+      <label>ご要望（任意）<textarea name="memo" rows="2" placeholder="例：子ども用の取り皿をお願いします"></textarea></label>
+      <p class="form-note">※これは体験用のデモです。送信しても、お店には届きません。</p>
+      <button class="btn btn-red" type="submit">この内容で送信する</button>
+    </form>
+    <div class="done" id="done" role="status">
+      <h3>受付ありがとうございました（デモ）</h3>
+      <p>実際に導入すると、この内容がお店のスマホ（LINE・メールなど）にすぐ届きます。営業中に電話に出られない時間の予約も取りこぼしません。</p>
+      <div class="summary" id="summary"></div>
+      <button class="btn btn-line" type="button" id="again">もう一度試す</button>
+    </div>
+    <p class="or-tel">お電話でのご予約・お問い合わせ<br><a href="tel:0776670636">0776-67-0636</a></p>
+  </div>
+</section>
+
+<section id="access">
+  <div class="wrap">
+    <div class="sec-title"><span class="en">ACCESS</span><h2 class="serif">店舗情報</h2></div>
+    <dl class="shop">
+      <div><dt>店名</dt><dd>焼肉とらじ</dd></div>
+      <div><dt>住所</dt><dd>福井県坂井市丸岡町羽崎<span class="tbd-tag">番地 要確認</span></dd></div>
+      <div><dt>電話</dt><dd><a href="tel:0776670636">0776-67-0636</a></dd></div>
+      <div><dt>営業時間</dt><dd>17:00〜21:00<span class="tbd-tag">ラストオーダー 要確認</span></dd></div>
+      <div><dt>定休日</dt><dd>月曜日</dd></div>
+      <div><dt>席</dt><dd>座敷席中心<span class="tbd-tag">席数 要確認</span></dd></div>
+      <div><dt>駐車場</dt><dd><span class="tbd-tag">要確認</span></dd></div>
+      <div><dt>お支払い</dt><dd><span class="tbd-tag">要確認</span></dd></div>
+    </dl>
+    <div class="map-btns">
+      <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E8%82%89%E3%81%A8%E3%82%89%E3%81%98%20%E5%9D%82%E4%BA%95%E5%B8%82%E4%B8%B8%E5%B2%A1%E7%94%BA%E7%BE%BD%E5%B4%8E" target="_blank" rel="noopener">Googleマップで開く</a>
+      <a class="btn btn-red" href="tel:0776670636">電話をかける</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo serif">焼肉 とらじ</div>
+  福井県坂井市丸岡町羽崎　TEL 0776-67-0636<br>
+  営業 17:00〜21:00／月曜定休
+  <p style="margin-top:16px;opacity:.7">このページは営業提案のために作成した非公式の試作品です。<br>制作：嶋田 悠人（Webサイト・業務アプリ制作）</p>
+</footer>
+
+<nav class="dock" aria-label="クイックメニュー">
+  <a href="tel:0776670636"><span class="i">📞</span>電話</a>
+  <a href="#access"><span class="i">📍</span>地図・情報</a>
+  <a class="main" href="#reserve"><span class="i">📅</span>予約する</a>
+</nav>
+
+<script>
+const MENU = {
+  yakiniku: [
+    ["骨付きカルビ",1300],["カルビ",1300],["ロース",1300],["タン",1300],["ミノ",950],["ハラミ",950],
+    ["テッチャン","800","上ホル"],["ホルモン",700],["豚カルビ",650],["若どり",600],["塩ひね",600],["味付かしわ",600],["豚足","450","半"]
+  ],
+  men: [
+    ["冷麺",700,"名物"],["辛口うどん",700],["ビビンバ",700,"スープ付"],["クッパ",700],["キムチ焼飯",700,"スープ付"],
+    ["お茶漬け",300,"漬物付"],["ライス（福井米）",null,"大・中・小"]
+  ],
+  kimchi: [
+    ["サラダ",450],["キムチ",400,"白菜"],["オイキムチ",400,"きゅうり"],["焼野菜",350],["サニーレタス",350],["生きゅうり",null]
+  ],
+  soup: [
+    ["たまごスープ",400],["わかめスープ",400],["その他スープ",null]
+  ]
+};
+const list = document.getElementById("menuList");
+function renderMenu(key){
+  list.innerHTML = MENU[key].map(([name,price,sub]) => {
+    const yen = price == null ? '<span class="yen tbd">価格要確認</span>'
+                              : `<span class="yen">${Number(price).toLocaleString()}円</span>`;
+    return `<li><span class="name">${name}${sub ? `<small>（${sub}）</small>` : ""}</span><span class="dots"></span>${yen}</li>`;
+  }).join("");
+}
+document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => {
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t === tab));
+  renderMenu(tab.dataset.tab);
+}));
+renderMenu("yakiniku");
+
+// 予約フォーム（デモ：送信はせず、画面上で完了表示のみ）
+const form = document.getElementById("reserveForm");
+const timeSel = form.time, peopleSel = form.people;
+for (let h = 17; h <= 20; h++) for (const m of ["00","30"]) {
+  if (h === 20 && m === "30") continue;
+  timeSel.add(new Option(`${h}:${m}`));
+}
+for (let n = 1; n <= 20; n++) peopleSel.add(new Option(`${n}名`, n));
+peopleSel.value = 2;
+
+const dateInput = form.date;
+const today = new Date();
+const iso = d => new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().slice(0,10);
+dateInput.min = iso(today);
+let first = new Date(today);
+if (first.getDay() === 1) first.setDate(first.getDate() + 1);
+dateInput.value = iso(first);
+
+form.addEventListener("change", e => {
+  if (e.target.name === "kind") {
+    const takeout = form.kind.value === "お持ち帰り";
+    document.getElementById("peopleField").hidden = takeout;
+    document.getElementById("orderField").hidden = !takeout;
+  }
+  if (e.target === dateInput) dateInput.setCustomValidity("");
+});
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const d = new Date(dateInput.value + "T00:00");
+  dateInput.setCustomValidity(d.getDay() === 1 ? "月曜日は定休日です。別の日をお選びください。" : "");
+  if (!form.reportValidity()) return;
+  const f = Object.fromEntries(new FormData(form));
+  const takeout = f.kind === "お持ち帰り";
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const rows = [
+    ["ご用件", f.kind],
+    ["日時", `${f.date.replace(/-/g,"/")} ${f.time}`],
+    takeout ? ["ご注文", f.order || "（未記入）"] : ["人数", `${f.people}名`],
+    ["お名前", f.name], ["電話", f.tel]
+  ];
+  if (f.memo) rows.push(["ご要望", f.memo]);
+  document.getElementById("summary").innerHTML = rows.map(([k,v]) => `<div><b>${k}：</b>${esc(v)}</div>`).join("");
+  form.style.display = "none";
+  document.getElementById("done").style.display = "block";
+});
+document.getElementById("again").addEventListener("click", () => {
+  document.getElementById("done").style.display = "none";
+  form.style.display = "grid";
+});
+</script>
+</body>
+</html>
